@@ -38,9 +38,9 @@ to install Ubuntu Server 20.04
   [https://raspberrypi.stackexchange.com/a/111787/120469](instructions).
 * Install the dependencies,
 ```
-wget https://raw.githubusercontent.com/wil3/jackcast/master/platforms/ubuntu/install.sh .
-chmod +x install.sh
-sudo install.sh
+wget https://raw.githubusercontent.com/wil3/jackcast/master/platforms/ubuntu/install.sh
+sudo chmod a+x install.sh
+sudo ./install.sh
 ```
 * Clone the repo and install Jackcast
 ```
