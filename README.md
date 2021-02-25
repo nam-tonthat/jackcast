@@ -72,13 +72,13 @@ systemctl enable jackcast
 ```
 sudo reboot
 ```
-* Jack cast should now be accessible by a browser at `jackcast.local`. 
 
-
-* Check status of jackcast
+* Check status of jackcast; it should read <b>active</b>
 ```
 systemctl status jackcast
 ```
+
+* Jack cast should now be accessible by a browser at `jackcast.local`. 
 
 Note this has only been tested on Android 10 Firefox 68.8.1, and Ubuntu 18.04
 Firefox 69.0.2. I have experienced issues not being able to resolve the local
