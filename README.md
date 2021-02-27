@@ -61,15 +61,20 @@ sudo rm /etc/nginx/sites-enabled/default
 sudo cp /srv/www/jackcast/platforms/ubuntu/etc/nginx/sites-available/jackcast /etc/nginx/sites-available/
 sudo ln -s /etc/nginx/sites-available/jackcast /etc/nginx/sites-enabled
 ```
-* Install the Jackcast service 
+* Install Jackcast (user level)
 ```
-# install at the system level 
-sudo cp /srv/www/jackcast/platforms/ubuntu/etc/systemd/user/jackcast.service /etc/systemd/system/
-
 # install at the user level 
 sudo cp /srv/www/jackcast/platforms/ubuntu/etc/systemd/user/jackcast.service /etc/systemd/user/
 systemctl enable jackcast
 ```
+
+* Install the Jackcast service (system level)
+```
+# install at the system level 
+sudo cp /srv/www/jackcast/platforms/ubuntu/etc/systemd/user/jackcast.service /etc/systemd/system/
+systemctl enable jackcast
+```
+
 * Reboot
 ```
 sudo reboot
