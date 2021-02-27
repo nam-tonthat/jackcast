@@ -50,6 +50,9 @@ sudo git clone https://github.com/wil3/jackcast.git
 sudo chown -R $USER:$USER jackcast
 cd jackcast
 sudo apt-get install python3-venv
+```
+* Configure Virtual Environment
+```
 python3 -m venv env
 source env/bin/activate
 pip3 install wheel # Is needed by gevent
