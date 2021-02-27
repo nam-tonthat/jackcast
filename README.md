@@ -58,8 +58,7 @@ pip3 install .
 * Configure Nginx
 ```
 sudo rm /etc/nginx/sites-enabled/default
-sudo cp /srv/www/jackcast/platforms/ubuntu/etc/nginx/sites-available/jackcast
-/etc/nginx/sites-available/
+sudo cp /srv/www/jackcast/platforms/ubuntu/etc/nginx/sites-available/jackcast /etc/nginx/sites-available/
 sudo ln -s /etc/nginx/sites-available/jackcast /etc/nginx/sites-enabled
 ```
 * Install the Jackcast service 
